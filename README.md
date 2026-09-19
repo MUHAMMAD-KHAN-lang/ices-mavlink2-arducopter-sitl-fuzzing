@@ -155,7 +155,14 @@ This repository is designed for a local ArduPilot SITL lab. Do not point these s
 
 **Research context:** the ICES (Intranet Communications in Emergency Situations) program. ICES is the program this work package was carried out for and the application domain the results are interpreted against. ICES is not the author or the copyright holder of this repository.
 
-**Prior work:** Karel Domin, Iraklis Symeonidis and Eduard Marin, "Security Analysis of the Drone Communication Protocol: Fuzzing the MAVLink protocol" (2016). Their paper defines the original MAVLink 1 test-case structure that this project adapts to MAVLink 2. The paper itself remains their work and their copyright; a copy is kept under `docs/attachments/` for reference only, and no rights to it are claimed or granted here. See `docs/PAPER_REFERENCE.md` and `docs/CASE_MAPPING_TO_PAPER.md`.
+**Prior work:** Karel Domin, Iraklis Symeonidis and Eduard Marin, "Security Analysis of the Drone Communication Protocol: Fuzzing the MAVLink protocol" (2016). This project is based on and modernizes the fuzzing methodology described in that work. The original work targeted MAVLink 1; this repository contains an independent adaptation of the methodology for MAVLink 2 using modern ArduPilot/ArduCopter SITL, Python, and automated monitoring.
+
+The paper is the authors' copyrighted work and is **not** redistributed here. Read it at the publisher's record:
+
+* ORBilu record: https://orbilu.uni.lu/handle/10993/37613
+* Persistent handle: https://hdl.handle.net/10993/37613
+
+See `docs/PAPER_REFERENCE.md` and `docs/CASE_MAPPING_TO_PAPER.md` for the reference details and the case-by-case mapping.
 
 **Third-party projects:** ArduPilot / ArduCopter, MAVLink and `pymavlink` are independent projects owned and licensed by their respective authors. This repository uses and tests against them; it claims no ownership of, and grants no rights to, any of them. The MIT license in `LICENSE` covers only the code and documentation written for this repository.
 
