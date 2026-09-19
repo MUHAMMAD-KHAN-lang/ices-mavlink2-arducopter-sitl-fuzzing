@@ -1,12 +1,14 @@
 cff-version: 1.2.0
-message: "MAVLink 2 fuzzing of ArduCopter SITL for the ICES program"
+message: "If you use this software, please cite it using the metadata below. The work is authored by Muhammad Hamza; ICES is the research program context, not the author."
 title: "MAVLink 2 Fuzzing of ArduCopter SITL for ICES"
 type: software
 version: "1.0.0"
 date-released: 2026-09-19
 authors:
-  - name: "ICES research project"
-    type: organization
+  - given-names: "Muhammad"
+    family-names: "Hamza"
+repository-code: "https://github.com/MUHAMMAD-KHAN-lang/ices-mavlink2-arducopter-sitl-fuzzing"
+license: MIT
 keywords:
   - MAVLink
   - MAVLink 2

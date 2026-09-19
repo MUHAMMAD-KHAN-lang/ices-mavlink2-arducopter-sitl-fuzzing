@@ -1,12 +1,14 @@
 # MAVLink 2 Fuzzing of ArduCopter SITL for ICES
 
-A reproducible, lab-only MAVLink 2 fuzzing setup for ArduPilot/ArduCopter Software-in-the-Loop (SITL), developed as a security/robustness work package relevant to the ICES (Intranet Communications in Emergency Situations) program.
+**Author and researcher: Muhammad Hamza (EMH).**
 
-The project is a **modern MAVLink 2 adaptation** of the 2016 paper:
+A reproducible, lab-only MAVLink 2 fuzzing setup for ArduPilot/ArduCopter Software-in-the-Loop (SITL), designed, implemented and run by Muhammad Hamza as a security/robustness work package. The ICES (Intranet Communications in Emergency Situations) program is the research and application context for the work — it is not the author of this repository.
+
+The project is a **modern MAVLink 2 adaptation**, written by Muhammad Hamza, of the 2016 paper:
 
 > Karel Domin, Iraklis Symeonidis, Eduard Marin, **“Security Analysis of the Drone Communication Protocol: Fuzzing the MAVLink protocol”**, 2016.
 
-The original paper constructs MAVLink 1 frames (`FE`). This repository does **not** reproduce that wire format. The implementation here targets the current ArduCopter SITL environment and constructs MAVLink 2 frames (`FD`) where a structured MAVLink frame is required.
+The 2016 paper is the prior work this project builds on; it is not part of this repository and its authors are not authors of this code. The original paper constructs MAVLink 1 frames (`FE`). This repository does **not** reproduce that wire format. The MAVLink 2 implementation, the seven-case adaptation, the SITL monitor and the test campaign recorded here are the author's own work: they target the current ArduCopter SITL environment and construct MAVLink 2 frames (`FD`) where a structured MAVLink frame is required.
 
 Paper record: https://hdl.handle.net/10993/37613
 Official repository record: https://orbilu.uni.lu/handle/10993/37613
@@ -146,3 +148,15 @@ See `docs/CASE_MAPPING_TO_PAPER.md` for the detailed mapping.
 ## Scope and safety
 
 This repository is designed for a local ArduPilot SITL lab. Do not point these scripts at a real aircraft, an external drone, or a third-party network. See `docs/ROBUST_TESTING_REMAINING.md` for the next research steps needed to turn these baseline tests into a stronger security test campaign.
+
+## Authorship and attribution
+
+**Author / researcher:** Muhammad Hamza (EMH). The fuzzing scripts, the SITL monitor, the MAVLink 2 adaptation of the seven test cases, the experimental runs and the documentation in this repository are his work.
+
+**Research context:** the ICES (Intranet Communications in Emergency Situations) program. ICES is the program this work package was carried out for and the application domain the results are interpreted against. ICES is not the author or the copyright holder of this repository.
+
+**Prior work:** Karel Domin, Iraklis Symeonidis and Eduard Marin, "Security Analysis of the Drone Communication Protocol: Fuzzing the MAVLink protocol" (2016). Their paper defines the original MAVLink 1 test-case structure that this project adapts to MAVLink 2. The paper itself remains their work and their copyright; a copy is kept under `docs/attachments/` for reference only, and no rights to it are claimed or granted here. See `docs/PAPER_REFERENCE.md` and `docs/CASE_MAPPING_TO_PAPER.md`.
+
+**Third-party projects:** ArduPilot / ArduCopter, MAVLink and `pymavlink` are independent projects owned and licensed by their respective authors. This repository uses and tests against them; it claims no ownership of, and grants no rights to, any of them. The MIT license in `LICENSE` covers only the code and documentation written for this repository.
+
+**Citing this work:** see `CITATION.cff`.
