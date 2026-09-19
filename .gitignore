@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.log
+Fuzz_logs/*.txt
+results/raw/*
+!results/raw/README.md
+.idea/
+.vscode/
